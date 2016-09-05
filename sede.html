@@ -16,12 +16,12 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <title>Sede</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=376139143"/>
-  <link rel="stylesheet" type="text/css" href="css/master_a-p_g_-maestra.css?crc=3816787084"/>
+  <link rel="stylesheet" type="text/css" href="css/master_a-p_g_-maestra.css?crc=4235719527"/>
   <link rel="stylesheet" type="text/css" href="css/sede.css?crc=42781205" id="pagesheet"/>
   <!-- IE-only CSS -->
   <!--[if lt IE 9]>
   <link rel="stylesheet" type="text/css" href="css/iefonts_sede.css?crc=166326151"/>
-  <link rel="stylesheet" type="text/css" href="css/nomq_preview_master_a-p_g_-maestra.css?crc=3855530162" id="nomq_pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/nomq_preview_master_a-p_g_-maestra.css?crc=56929551" id="nomq_pagesheet"/>
   <![endif]-->
   <!-- Other scripts -->
   <script type="text/javascript">
@@ -93,7 +93,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
       </div>
      </div>
      <div class="MenuItemContainer borderbox clearfix grpelem" id="u35518"><!-- vertical box -->
-      <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u35542" href="registro.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap borderbox clearfix grpelem" id="u35543-4"><!-- content --><p>Registro</p></div></a>
+      <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u35542" href="http://bitnami-meanstack-5813.cloudapp.net/" target="_blank"><!-- horizontal box --><div class="MenuItemLabel NoWrap borderbox clearfix grpelem" id="u35543-4"><!-- content --><p>Registro</p></div></a>
      </div>
     </nav>
     <div class="SlideShowWidget clearfix HeroFillFrame pinned-colelem" id="slideshowu20080"><!-- none box -->
@@ -582,7 +582,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
       <img class="block" id="u25808_img" src="images/scrolldown.gif?crc=4242453415" alt="" width="90" height="90"/>
      </div>
     </div>
-    <a class="nonblock nontext Button rounded-corners clearfix pinned-colelem" id="buttonu2989" href="registro.html"><!-- container box --><div class="clearfix grpelem" id="u2990-4"><!-- content --><p>REGISTRO</p></div></a>
+    <a class="nonblock nontext Button rounded-corners clearfix pinned-colelem" id="buttonu2989" href="http://bitnami-meanstack-5813.cloudapp.net/" target="_blank"><!-- container box --><div class="clearfix grpelem" id="u2990-4"><!-- content --><p>REGISTRO</p></div></a>
     <a class="nonblock nontext anim_swing clip_frame colelem" id="u26436" href="sede.html#inicio" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=-1,M12=0,M21=0,M22=-1,SizingMethod='auto expand')" data-mu-ie-matrix-dx="0" data-mu-ie-matrix-dy="0"><!-- image --><img class="block" id="u26436_img" src="images/scrolldown.gif?crc=4242453415" alt="" width="90" height="90"/></a>
     <div class="verticalspacer" data-offset-top="8601" data-content-above-spacer="8600" data-content-below-spacer="0"></div>
     <div class="browser_width colelem" id="u493-bw">
@@ -627,8 +627,8 @@ Muse.Utils.fullPage('#page');/* 100% height page */
 Muse.Utils.initWidget('.MenuBar', ['#bp_infinity'], function(elem) { return $(elem).museMenu(); });/* unifiedNavBar */
 Muse.Utils.initWidget('#slideshowu20080', ['#bp_infinity'], function(elem) { var widget = new WebPro.Widget.ContentSlideShow(elem, {autoPlay:false,displayInterval:3500,slideLinkStopsSlideShow:false,transitionStyle:'fading',lightboxEnabled_runtime:false,shuffle:false,transitionDuration:500,enableSwipe:true,elastic:'fullWidth',resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false}); $(elem).data('widget', widget); return widget; });/* #slideshowu20080 */
 $('#slideshowu20080').registerSlideshowScrollEffect([{"play":false,"in":[-Infinity,-6]},{"play":50,"in":[-6,Infinity]}]);/* scroll effect */
-$('#u25804-6').registerOpacityScrollEffect([{"opacity":100,"fade":109.9,"in":[-Infinity,92.9]},{"opacity":50,"in":[92.9,92.9]},{"opacity":0,"fade":70.1,"in":[92.9,Infinity]}]);/* scroll effect */
-$('#u25808').registerOpacityScrollEffect([{"opacity":100,"fade":50,"in":[-Infinity,167.9]},{"opacity":50,"in":[167.9,167.9]},{"opacity":0,"fade":50,"in":[167.9,Infinity]}]);/* scroll effect */
+$('#u25804-6').registerOpacityScrollEffect([{"in":[null,92.9],"opacity":100,"fade":109.9},{"in":[92.9,92.9],"opacity":50},{"in":[92.9,null],"opacity":0,"fade":70.1}]);/* scroll effect */
+$('#u25808').registerOpacityScrollEffect([{"in":[null,167.89999999999998],"opacity":100,"fade":50},{"in":[167.9,167.9],"opacity":50},{"in":[167.89999999999998,null],"opacity":0,"fade":50}]);/* scroll effect */
 Muse.Utils.showWidgetsWhenReady();/* body */
 Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
 }catch(a){if(a&&"function"==typeof a.notify?a.notify():Muse.Assert.fail("Error calling selector function: "+a),false)throw a;}})})};
