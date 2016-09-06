@@ -16,12 +16,12 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <title>Sede</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=376139143"/>
-  <link rel="stylesheet" type="text/css" href="css/master_a-p_g_-maestra.css?crc=4235719527"/>
-  <link rel="stylesheet" type="text/css" href="css/sede.css?crc=42781205" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/master_a-p_g_-maestra.css?crc=52388634"/>
+  <link rel="stylesheet" type="text/css" href="css/sede.css?crc=3923730026" id="pagesheet"/>
   <!-- IE-only CSS -->
   <!--[if lt IE 9]>
-  <link rel="stylesheet" type="text/css" href="css/iefonts_sede.css?crc=166326151"/>
-  <link rel="stylesheet" type="text/css" href="css/nomq_preview_master_a-p_g_-maestra.css?crc=56929551" id="nomq_pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/iefonts_sede.css?crc=3800565075"/>
+  <link rel="stylesheet" type="text/css" href="css/nomq_preview_master_a-p_g_-maestra.css?crc=3991533229" id="nomq_pagesheet"/>
   <![endif]-->
   <!-- Other scripts -->
   <script type="text/javascript">
@@ -80,6 +80,12 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
        <div class="MenuItemLabel NoWrap borderbox clearfix grpelem" id="u31588-4"><!-- content -->
         <p>Expositores</p>
        </div>
+       <div class="borderbox transition grpelem" id="u31587"><!-- content --></div>
+      </div>
+      <div class="SubMenu MenuLevel1 borderbox clearfix" id="u31590"><!-- vertical box -->
+       <ul class="SubMenuView borderbox clearfix colelem" id="u31591"><!-- vertical box -->
+        <li class="MenuItemContainer borderbox clearfix colelem" id="u73501"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix grpelem" id="u73506" href="conferencias.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap borderbox clearfix grpelem" id="u73516-4"><!-- content --><div id="u73516-3"><p id="u73516-2"><span id="u73516">Conferencias</span></p></div></div></a></li>
+       </ul>
       </div>
      </div>
      <div class="MenuItemContainer borderbox clearfix grpelem" id="u14302"><!-- vertical box -->
@@ -626,9 +632,9 @@ Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized');
 Muse.Utils.fullPage('#page');/* 100% height page */
 Muse.Utils.initWidget('.MenuBar', ['#bp_infinity'], function(elem) { return $(elem).museMenu(); });/* unifiedNavBar */
 Muse.Utils.initWidget('#slideshowu20080', ['#bp_infinity'], function(elem) { var widget = new WebPro.Widget.ContentSlideShow(elem, {autoPlay:false,displayInterval:3500,slideLinkStopsSlideShow:false,transitionStyle:'fading',lightboxEnabled_runtime:false,shuffle:false,transitionDuration:500,enableSwipe:true,elastic:'fullWidth',resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false}); $(elem).data('widget', widget); return widget; });/* #slideshowu20080 */
-$('#slideshowu20080').registerSlideshowScrollEffect([{"play":false,"in":[-Infinity,-6]},{"play":50,"in":[-6,Infinity]}]);/* scroll effect */
-$('#u25804-6').registerOpacityScrollEffect([{"in":[null,92.9],"opacity":100,"fade":109.9},{"in":[92.9,92.9],"opacity":50},{"in":[92.9,null],"opacity":0,"fade":70.1}]);/* scroll effect */
-$('#u25808').registerOpacityScrollEffect([{"in":[null,167.89999999999998],"opacity":100,"fade":50},{"in":[167.9,167.9],"opacity":50},{"in":[167.89999999999998,null],"opacity":0,"fade":50}]);/* scroll effect */
+$('#slideshowu20080').registerSlideshowScrollEffect([{"in":[-Infinity,-6],"play":false},{"in":[-6,Infinity],"play":50}]);/* scroll effect */
+$('#u25804-6').registerOpacityScrollEffect([{"fade":109.9,"in":[-Infinity,92.9],"opacity":100},{"in":[92.9,92.9],"opacity":50},{"fade":70.1,"in":[92.9,Infinity],"opacity":0}]);/* scroll effect */
+$('#u25808').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,167.9],"opacity":100},{"in":[167.9,167.9],"opacity":50},{"fade":50,"in":[167.9,Infinity],"opacity":0}]);/* scroll effect */
 Muse.Utils.showWidgetsWhenReady();/* body */
 Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
 }catch(a){if(a&&"function"==typeof a.notify?a.notify():Muse.Assert.fail("Error calling selector function: "+a),false)throw a;}})})};
